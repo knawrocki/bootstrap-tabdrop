@@ -83,7 +83,7 @@
             var totalWidth = 0;
             var ulWidth = el.width();
         
-            el.find('li').each(function(){
+            el.find('li').not('.tabdrop').each(function(){
                 totalWidth += $(this).outerWidth(true);
             });
 
